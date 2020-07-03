@@ -1,13 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 body {
+  background-color: #000;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size:1rem;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/bg.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'star_jediregular';
+  src: url('./fonts/starjedi-webfont.woff2') format('woff2'),
+       url('./fonts/starjedi-webfont.woff') format('woff'),
+       url('./fonts/starjedi-webfont.ttf') format('truetype'),
+       url('./fonts/starjedi-webfont.svg#star_jediregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-family: 'star_jediregular';
+  color:#49535C;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color:#fff;
+  margin-top:5px;
+}
+
+.hidden {
+  display: none;
+}
+
+fieldset {
+  border: 0px;
+  padding:0;
+
+}
+
+.search {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input {
+  padding: 15px;
+  color:#273035;
+  background-color: #DBE3D4;
+  border-bottom: 2px solid #49535C;
+  border-top:0px;
+  border-right:0px;
+  border-left:0px;
+  font-size:1rem;
+  margin-right:15px;
+  width:80%;
+}
+
+input:hover, input:active, input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #49535C;
+  color: #fff;
+  border:0px;
+  padding:15px 30px;
+  font-size:1rem;
+}
+
+button:hover, button:active, button:focus {
+  outline: none;
+}
+
+button:active, button:focus {
+  outline: none;
+  background-color: #DBE3D4;
+  color: #273035;
+}
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin:0 0 15px 0;
+  flex-wrap: wrap;
+}
+
+.chip {
+  border-radius:12px;
+  padding: 5px 15px;
+  color:#fff;
+  background-color: #49535C;
+  border:0px;
+  font-size:.9rem;
+  margin:5px 15px 0 0;
+}
+
+.chip:hover, .chip:active, .chip:focus {
+  outline: none;
+  border: 0px;
+}
+
+.chip:active {
+  color:black;
+  background-color: #DBE3D4;
+}
+
+ul {
+  list-style: none;
+  padding-left:0px;
+}
+
+li {
+  border-bottom: 2px solid #DBE3D4;
+  background-color: #49535C;
+  color:#fff;
+  margin: 15px 0;
+  padding: 15px;
+  font-weight: 400;
+  
+}
+
